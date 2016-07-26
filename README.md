@@ -1,3 +1,3 @@
 # osgreentea.github.io
 
-Cooming soon...
+Experimental branch. Reimplementation of site without bootstrap
