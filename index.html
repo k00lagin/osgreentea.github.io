@@ -1,3 +1,8 @@
+---
+layout: post
+title: Blogging Like a Hacker
+lang: ru
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +11,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Greentea OS - Coming soon</title>
+        <title>{{ site.data[page.lang].title  }}</title>
         <meta name="author" content="Greentea OS">
         <meta name="theme-color" content="#24c12e">
         <link rel="icon" href="images/favicon-16px.png" type="image/png" sizes="16x16">
@@ -28,7 +33,6 @@
         <!-- CSS -->
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -40,13 +44,12 @@
                     <div class="row">
                         <div class="col-sm-12 col-xs-12 col-md-12">
                             <img src="images/logo.png" alt="Logo of Greentea OS" width="250" height="250">
-                            <h2>We're Coming Soon</h2>
-                            <p id="m">We are working very hard on the new version of our site. It will bring a lot of new features.
-                                Stay tuned!</p>
-                            <a href='https://github.com/OSGreentea/Greentea/issues' class="bt btn-default">Become a DEV</a>
-                            <p>or</p>
+                            <h2>{{ site.data[page.lang]were_coming_soon }}</h2>
+                            <p id="m">{{ site.data[page.lang]coming-soon_we_are_working }}</p>
+                            <a href='https://github.com/OSGreentea/Greentea/issues' class="bt btn-default">{{ site.data[page.lang]become_a_dev }}</a>
+                            <p>{{ site.data[page.lang]coming-soon_or }}</p>
                             <a href='https://github.com/OSGreentea/Greentea/blob/master/README.md' class="bt btn-default">
-                                See our wiki</a>
+                                {{ site.data[page.lang]see_our_wiki }}</a>
                         </div>
                     </div>
                 </div>
@@ -57,17 +60,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-xs-12 col-md-12">
-                    <h1>About Us</h1>
-                    <p>Greentea OS is a fork of <a href="https://reactos.org">ReactOS</a>,
-                        a free Windows-compatible operating system, written from scratch, but more user and production oriented (than ReactOS itself).
-                        We would first make it *actually* usable for day-to-day use.</p>
+                    <h1>{{ site.data[page.lang]about_us_h }}</h1>
+                    <p>{{ site.data[page.lang]about_us }}</p>
                 </div>
             </div>
         </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <p class="text-muted small">Cooming soon page created by Nicolo Altamura, Greentea OS team and contributors. <a href="https://en.wikipedia.org/wiki/Green_tea">Green tea</a> is like coffee, <a href="https://github.com/OSGreentea/Kernel">Greentea</a> is like OS. GreenTeaOS is fine too :)</p>
+                <p class="text-muted small">{{ site.data[page.lang]footer_made-by }}</p>
             </div>
         </footer>
  </body>
