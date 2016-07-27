@@ -31,7 +31,15 @@ img { max-width: 100%; }
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: url(../images/backcode.png) #272822;
+    /background: url(../images/backcode.png) #272822;
+    background: #272822;
+    position: relative;
+    overflow: hidden;
+}
+.backcode {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .coming-soon h1 {
@@ -106,4 +114,61 @@ img { max-width: 100%; }
       -ms-user-select: none;
        -o-user-select: none;
           user-select: none;
+}
+.button {
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+}
+.button:hover,
+.button:focus,
+.button:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+/* highlight */
+.highlight .cm,
+.highlight .c1 { /*Comment*/
+  color: #726e5b;
+}
+.highlight .s,
+.highlight .err + .n + .p,
+.highlight .err + .n + .p + .n,
+.highlight .err + .n + .p + .n + .p,
+.highlight .err + .n + .p + .n + .p + .n,
+.highlight .err + .n + .p + .n + .p + .n + .p,
+.highlight .err + .n + .p + .n + .p + .n + .p + .n { /*String*/
+  color: #E6DB74;
+}
+.highlight .err,
+.highlight .err + .n { /*Keyword*/
+  color: #F92672;
+}
+.highlight .nf { /* Library class/type*/
+  color: #66D9EF;
+}
+.highlight .n,.p {
+  color: white;
+}
+.highlight  pre { /* antibootstrap */
+  border: 0; 
+  border-radius: 0;
+}
+.highlight {
+  text-align: left;
+}
+.highlight > pre,
+.highlight .code > pre,
+.highlight .lineno {
+  background: #272822;
+  color: #8f9078;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
