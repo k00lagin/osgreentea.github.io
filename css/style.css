@@ -1,5 +1,9 @@
+---
 
+---
 /* Cooming Soon page style by Nicolo Altamura */
+{% include bootstrap.css %}
+{% include font-lato.css %}
 
 
 body {
@@ -156,12 +160,14 @@ img { max-width: 100%; }
 }
 .highlight {
   text-align: left;
+  font-family: monospace;
 }
 .highlight > pre,
 .highlight .code > pre,
 .highlight .lineno {
   background: #272822;
   color: #8f9078;
+  font-family: Nimbus Mono L, Courier New, Courier, monospace;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
