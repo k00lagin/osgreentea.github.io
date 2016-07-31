@@ -164,12 +164,16 @@ img { max-width: 100%; }
   text-align: left;
   font-family: monospace;
 }
+.highlight > pre {
+  padding: 0;
+}
 .highlight > pre,
 .highlight .code > pre,
 .highlight .lineno {
   background: #272822;
   color: #8f9078;
   font-family: Nimbus Mono L, Courier New, Courier, monospace;
+  padding-top: 0;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
